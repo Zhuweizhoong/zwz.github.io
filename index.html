@@ -506,8 +506,8 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2019-03-14T16:33:38+08:00">
-                2019-03-14
+              <time title="更新于" itemprop="dateModified" datetime="2019-03-17T22:03:07+08:00">
+                2019-03-17
               </time>
             
           </span>
@@ -556,7 +556,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  265
+                  319
                 </span>
               
 
@@ -601,7 +601,8 @@
 <p><strong>坑1：在git部署hexo时，无法传主题，但是在本地部署时则没有任何问题。</strong><br>答：需要在<code>_config.yml</code>下的<code>#url下的root</code>添加自己项目的名字。例如：我的项目名是：<code>zwz.github.io</code>,则添加至<strong>root</strong>下<code>/zwz.github.io</code>即可</p>
 <p><strong>坑2：无法部署至github。</strong><br>答：需要在<code>_config.yml</code>下的<strong>Url</strong>和<strong>Deploy</strong>下将<code>url</code>和<code>repo</code>补齐。例如：我的github项目地址为:<a href="https://github.com/Zhuweizhoong/zwz.github.io.">https://github.com/Zhuweizhoong/zwz.github.io.</a>.那么就在url和repo下添加：<a href="https://github.com/Zhuweizhoong/zwz.github.io.git">https://github.com/Zhuweizhoong/zwz.github.io.git</a>即可。<strong>注意</strong>： url中不需要补<code>.git</code></p>
 <p><strong>坑3：本地更新并上传了文章，为啥网页没有更新？</strong><br>答：1、上传需要时间 2、尝试按ctrl + F5清除页面缓存</p>
-<p><strong>坑4：创建了categories，但是点进去是空白页面</strong><br>答：1、需要在<code>_config.yml</code>修改完<code>categories</code>配置再进行hexo new page categories 2、创建的的文档需要有categories标注，并且在tags之上，或者删除tags</p>
+<p><strong>坑4：创建了categories，但是点进去是空白页面</strong><br>答:1、需要在<code>_config.yml</code>修改完<code>categories</code>配置再进行hexo new page categories 2、创建的的文档需要有categories标注，并且在tags之上，或者删除tags</p>
+<p><strong>坑5:busuanzi无法统计访问网站的人数</strong><br>答:将在<code>footer.swig</code>(路径：/next/layout/_partials/)和<br><code>busaunzi-counter.swig</code>(路径：/next/layout/analytics/)中的<code>src</code>的值替换为<code>&quot;https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js&quot;</code></p>
 
           
         
@@ -792,7 +793,7 @@
     <!-- 博客字数统计 -->
     <span class="site-pv">
       <i class="fa fa-pencil"></i>
-      博客全站共： <span class="post-count">376</span> 字
+      博客全站共： <span class="post-count">430</span> 字
     </span>
 </div>
 
