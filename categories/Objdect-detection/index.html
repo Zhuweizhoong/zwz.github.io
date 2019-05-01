@@ -86,19 +86,13 @@
 
 
 
-<meta name="description" content="#环境配置：  Ubuntu 16.04 python 3.5  CUDA 9.0 cudnn 7.0   #坑一：需要修改make.sh文件，因为原来代码不兼容python3。make.sh修改如下： nvcc -std=c++11 -c -o roi_pooling_op.cu.o roi_pooling_op_gpu.cu.cc \     -I $TF_INC -D GOOGLE_CUDA">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Faster R-CNN">
-<meta property="og:url" content="https://github.com/Zhuweizhoong/zwz.github.io/2019/04/28/faster-rcnn/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jeremie Blog">
+<meta property="og:url" content="https://github.com/Zhuweizhoong/zwz.github.io/categories/Objdect-detection/index.html">
 <meta property="og:site_name" content="Jeremie Blog">
-<meta property="og:description" content="#环境配置：  Ubuntu 16.04 python 3.5  CUDA 9.0 cudnn 7.0   #坑一：需要修改make.sh文件，因为原来代码不兼容python3。make.sh修改如下： nvcc -std=c++11 -c -o roi_pooling_op.cu.o roi_pooling_op_gpu.cu.cc \     -I $TF_INC -D GOOGLE_CUDA">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20190422220238978.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MjkyNDQ3,size_8,color_FFFFFF,t_70">
-<meta property="og:updated_time" content="2019-04-28T09:05:59.840Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Faster R-CNN">
-<meta name="twitter:description" content="#环境配置：  Ubuntu 16.04 python 3.5  CUDA 9.0 cudnn 7.0   #坑一：需要修改make.sh文件，因为原来代码不兼容python3。make.sh修改如下： nvcc -std=c++11 -c -o roi_pooling_op.cu.o roi_pooling_op_gpu.cu.cc \     -I $TF_INC -D GOOGLE_CUDA">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20190422220238978.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MjkyNDQ3,size_8,color_FFFFFF,t_70">
+<meta name="twitter:title" content="Jeremie Blog">
 
 
 
@@ -128,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="https://github.com/Zhuweizhoong/zwz.github.io/2019/04/28/faster-rcnn/">
+  <link rel="canonical" href="https://github.com/Zhuweizhoong/zwz.github.io/categories/Objdect-detection/">
 
 
 
 
 
-  <title>Faster R-CNN | Jeremie Blog</title>
+  <title>分类: Objdect detection | Jeremie Blog</title>
   
 
 
@@ -156,10 +150,10 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left ">
     <div class="headband"></div>
 
-     <div class="container sidebar-position-left page-post-detail ">
+     <div class="container sidebar-position-left  ">
     <div class="headband"></div>
 
 
@@ -258,263 +252,53 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
+  
+  
+  
+  <div class="post-block category">
 
-  
+    <div id="posts" class="posts-collapse">
+      <div class="collection-title">
+        <h1>Objdect detection<small>分类</small>
+        </h1>
+      </div>
 
-  
-  
-  
+      
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://github.com/Zhuweizhoong/zwz.github.io/zwz.github.io/2019/04/28/faster-rcnn/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Jeremie">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/zwz.github.io/images/ava.jpeg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Jeremie Blog">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
+            <a class="post-title-link" href="/zwz.github.io/2019/04/28/faster-rcnn/" itemprop="url">
+              
+                <span itemprop="name">Faster R-CNN</span>
+              
+            </a>
         
-          <h1 class="post-title" itemprop="name headline">Faster R-CNN</h1>
-        
+      </h2>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-28T17:00:00+08:00">
-                2019-04-28
-              </time>
-            
-
-            
-              <span class="post-meta-divider">|</span>
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-check-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">更新于&#58;</span>
-              
-              <time title="更新于" itemprop="dateModified" datetime="2019-04-28T17:05:59+08:00">
-                2019-04-28
-              </time>
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/zwz.github.io/categories/Objdect-detection/" itemprop="url" rel="index">
-                    <span itemprop="name">Objdect detection</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-            <div class="post-wordcount">
-              
-                
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-file-word-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">字数统计&#58;</span>
-                
-                <span title="字数统计">
-                  533
-                </span>
-              
-
-              
-                <span class="post-meta-divider">|</span>
-              
-
-              
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-clock-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
-                
-                <span title="阅读时长">
-                  2
-                </span>
-              
-            </div>
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <p>#环境配置：</p>
-<ul>
-<li>Ubuntu 16.04</li>
-<li>python 3.5 </li>
-<li>CUDA 9.0</li>
-<li>cudnn 7.0</li>
-</ul>
-<hr>
-<p>#<font color="##DC143C">坑一：需要修改make.sh文件，因为原来代码不兼容python3。</font><br>make.sh修改如下：</p>
-<pre><code>nvcc -std=c++11 -c -o roi_pooling_op.cu.o roi_pooling_op_gpu.cu.cc \
-    -I $TF_INC -D GOOGLE_CUDA=1 -x cu -Xcompiler -fPIC $CXXFLAGS \
-    -lcudart -L$CUDA_PATH/lib64 -L$TF_LIB -ltensorflow_framework -I$TF_INC/external/nsync/public \
-    -arch=sm_61
-
-g++ -std=c++11 -shared -D_GLIBCXX_USE_CXX11_ABI=0 -o roi_pooling.so roi_pooling_op.cc \
-    roi_pooling_op.cu.o -I $TF_INC -L $TF_LIB -ltensorflow_framework -D GOOGLE_CUDA=1 -fPIC $CXXFLAGS \
-    -lcudart -L$CUDA_PATH/lib64 -I$TF_INC/external/nsync/public \
-</code></pre><hr>
-<p>#<font color="##DC143C">坑二：从py2转换为py3编码格式</font><br>调用2to3脚本：   </p>
-<pre><code>2to3 example.py
-</code></pre><hr>
-<p>#<font color="##DC143C">坑三 使用bash训练脚本</font></p>
-<p>如果直接</p>
-<pre><code>python3 ./tools/train_net.py --device gpu --device_id 1 --solver VGG_CNN_M_1024 --weight ./data/pre-model/ 
-VGG_imagenet.npy --imdb voc_2007_train --cfg experiments/cfgs/faster_rcnn_end2end.yml --network VGGnet_train
-</code></pre><p>训练是没有问题的。但是如果想调用</p>
-<pre><code>bash ./experiments/scripts/faster_rcnn_end2end.sh gpu 0  vgg_16 pascal_voc
-</code></pre><p>进行训练需要将python改为python3</p>
-<hr>
-<p>#<font color="##DC143C">坑四：运行<code>\experiments\scripts\faster_rcnn_end2end.sh</code> ,如果出现<code>You may need to pass the encoding= option to numpy.load</code></font><br>由于在Py2中的默认编码为ASCII，但是在py3中的默认编码为UTF-8，所以需要将<code>np.load(yourfilepath)</code>改为<code>np.load(yourfilepath,encoding=&quot;latin1&quot;)</code>,可以配合<code>grep -r np.load</code>来配合查找<code>\experiments\scripts\faster_rcnn_end2end.sh</code></p>
-<hr>
-<p>#<font color="##DC143C">坑五：<code>\lib\fast_rcnn\train.py</code>输出print格式报错</font><br>在line189中的</p>
-<pre><code>print((&apos;iter: %d / %d, total loss: %.4f, rpn_loss_cls: %.4f.. max_iters, rpn_loss_cls_val+rpn_loss_box_value+ loss_cls_value + loss_box_value ,rpn_loss_cls_value,rpn_loss_box_value,loss_cls_value, loss_box_value, lr.eval()))
-</code></pre><p>格式错误。</p>
-<p>改为format形式即可，原因可能是’\’换行的影响</p>
-<pre><code>print(&apos;iter: {:d} / {:d} total loss: {:.4f}, rpn_loss_cls: {:.4f}, rpn_loss_box: {:.4f}, loss_cls: {:.4f}, loss_box: {:.4f}, lr: {:.4f}&apos;.format(iter+1, max_iters, rpn_loss_cls_value + rpn_loss_box_value + loss_cls_value+loss_box_value, rpn_loss_cls_value, rpn_loss_box_value, loss_cls_value, loss_box_value, lr.eval()))
-</code></pre><hr>
-<p>#<font color="##DC143C">坑六 <code>\lib\rpn_msr\proposal_target_layer_tf</code> npr.choice的size=bg_rois_per_this_image错误</font><br>在line135<br><code>bg_rois_per_this_image = rois_per_image - fg_rois_per_this_image</code></p>
-<p>改为int型即可：<code>bg_rois_per_this_image = int(rois_per_image - fg_rois_per_this_image)</code></p>
-<hr>
-<p>#<font color="##DC143C">坑七 <code>test_net.py</code>的Pickle: TypeError: a bytes-like object is required, not ‘str’</font><br>首先测试代码如下：<br>     python3 ./tools/test_net.py –device gpu –device_id 0 –weights output/faster_rcnn_end2end/voc_2007_trainval/VGGnet_fast_rcnn_iter_100000.ckpt –imdb voc_2007_test –cfg experiments/cfgs/faster_rcnn_end2end.yml –network VGGnet_test</p>
-<p>这是因为的Pickle.load函数存在py2和py3版本问题。只需要将<code>open(filename, &#39;w&#39;)、open(filename, &#39;r&#39;)</code>改为<code>open(filename, &#39;wb&#39;)和open(filename, &#39;rb&#39;)</code>即可，</p>
-<hr>
-<p>#<font color="##DC143C">坑八 关于顺利运行测试<code>test_net.py</code>后显示annots.pkl为空</font><br>在测试前，删除<code>data/VOCdevkit2007/annotations_cache/annots.pkl</code> 和<code>data/cache/voc_2007_trainval_gt_roidb.pkl</code>即可</p>
-<hr>
-<h1 id="剩下的就是看所谓的效果了"><a href="#剩下的就是看所谓的效果了" class="headerlink" title="剩下的就是看所谓的效果了~"></a>剩下的就是看所谓的效果了~</h1><p><img src="https://img-blog.csdnimg.cn/20190422220238978.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM1MjkyNDQ3,size_8,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-      <div>
-
-        <div>
-    
-        <div style="text-align:center;color: #ccc;font-size:14px;">-------------Nothing in the dark-------------</div>
-    
-</div>
-
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated" datetime="2019-04-28T17:00:00+08:00" content="2019-04-28">
+          04-28
+        </time>
       </div>
-    
 
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/zwz.github.io/2019/03/14/参考文献/" rel="next" title="参考文章">
-                <i class="fa fa-chevron-left"></i> 参考文章
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
+    </header>
   </article>
 
 
-
-    <div class="post-spread">
       
     </div>
+
   </div>
+  
+  
+  
+
+  
+
 
 
           </div>
@@ -522,15 +306,6 @@ VGG_imagenet.npy --imdb voc_2007_train --cfg experiments/cfgs/faster_rcnn_end2en
 
 
           
-
-  
-    <div class="comments" id="comments">
-      <div id="lv-container" data-id="city" data-uid="MTAyMC80MzIzOS8xOTc4NQ=="></div>
-    </div>
-
-  
-
-
 
         </div>
         
@@ -551,17 +326,8 @@ VGG_imagenet.npy --imdb voc_2007_train --cfg experiments/cfgs/faster_rcnn_end2en
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -674,22 +440,6 @@ show_date_time();
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#剩下的就是看所谓的效果了"><span class="nav-number">1.</span> <span class="nav-text">剩下的就是看所谓的效果了~</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
@@ -857,10 +607,6 @@ show_date_time();
 
 
   
-  <script type="text/javascript" src="/zwz.github.io/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/zwz.github.io/js/src/post-details.js?v=5.1.4"></script>
-
-
 
   
 
@@ -889,17 +635,6 @@ show_date_time();
 
 
 
-  
-    <script type="text/javascript">
-      (function(d, s) {
-        var j, e = d.getElementsByTagName(s)[0];
-        if (typeof LivereTower === 'function') { return; }
-        j = d.createElement(s);
-        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-        j.async = true;
-        e.parentNode.insertBefore(j, e);
-      })(document, 'script');
-    </script>
   
 
 
